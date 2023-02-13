@@ -17,7 +17,10 @@ export default function About() {
           <p className='text-xl font-semibold underline pb-2'>Tech-Stack</p>
           <div className='flex flex-wrap justify-center gap-8 max-w-[450px] mx-auto'>
             {skills.map((skill) => (
-              <div className='flex flex-col items-center bg-sky-900 p-2 rounded-lg min-w-[100px]'>
+              <div
+                key={skill.name}
+                className='flex flex-col items-center bg-sky-900 p-2 rounded-lg min-w-[100px]'
+              >
                 <Image
                   title={skill.name}
                   className='m-2'
