@@ -3,7 +3,7 @@ import Link from "next/link";
 function HeroSection() {
   return (
     <div className='flex flex-col gap-16 pt-20'>
-      <div className='flex flex-col gap-2'>
+      <div className='flex flex-col gap-2 text-center'>
         <p className='md:text-7xl text-5xl font-semibold'>
           Jan-Niklas Reinhardt
         </p>
