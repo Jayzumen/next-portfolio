@@ -27,7 +27,7 @@ export default async function Projects() {
   const projects = await fetchProjects();
   return (
     <div className='flex flex-col'>
-      <h1 className='text-4xl text-center my-10'>Projects</h1>
+      <h1 className='text-4xl text-center my-10 underline'>Projects</h1>
       <div className='flex flex-wrap gap-8'>
         {projects?.map((project) => (
           <div
@@ -47,25 +47,27 @@ export default async function Projects() {
               }
             })}
 
-            <div className='border-y-2 border-gray-500 text-center'>
+            <div className='border-y-2 border-white text-center'>
               <p className='my-3 mx-auto min-h-[60px] max-w-[350px] text-xl'>
                 {project.description}
               </p>
             </div>
             <div className='flex flex-wrap items-center justify-center text-xl'>
               <Link
+                aria-label='Website-Link'
                 href={project.homepage}
                 target='_blank'
                 rel='noreferrer'
-                className='m-5 cursor-pointer rounded-md bg-slate-800 px-8 py-1 text-slate-200 transition hover:text-white hover:underline'
+                className='m-5 cursor-pointer rounded-md bg-slate-800 px-8 py-1 transition hover:text-white hover:underline'
               >
                 Website
               </Link>
               <Link
+                aria-label='Github-Link'
                 href={project.html_url}
                 target='_blank'
                 rel='noreferrer'
-                className='m-5 cursor-pointer rounded-md bg-slate-800 px-8 py-1 text-slate-200 transition hover:text-white hover:underline'
+                className='m-5 cursor-pointer rounded-md bg-slate-800 px-8 py-1 transition hover:text-white hover:underline'
               >
                 Github
               </Link>

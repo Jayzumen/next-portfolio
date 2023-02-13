@@ -1,6 +1,11 @@
 import NextNetflixClone from "../assets/portfolio/netflixclone.jpg";
 import NoteTaker from "../assets/portfolio/notetaker.jpg";
 import Pokefans from "../assets/portfolio/pokefans.jpg";
+import JavaScript from "../assets/skills/javascript.png";
+import TypeScript from "../assets/skills/typescript.png";
+import React from "../assets/skills/react.png";
+import NextJS from "../assets/skills/nextjs.svg";
+import TailwindCSS from "../assets/skills/tailwind.png";
 
 export const images = [
   {
@@ -14,5 +19,28 @@ export const images = [
   {
     name: "pokefans",
     src: Pokefans,
+  },
+];
+
+export const skills = [
+  {
+    name: "JavaScript",
+    src: JavaScript,
+  },
+  {
+    name: "TypeScript",
+    src: TypeScript,
+  },
+  {
+    name: "React",
+    src: React,
+  },
+  {
+    name: "Next.js",
+    src: NextJS,
+  },
+  {
+    name: "TailwindCSS",
+    src: TailwindCSS,
   },
 ];
