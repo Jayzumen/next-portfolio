@@ -1,18 +1,23 @@
-import './globals.css'
+import "./globals.css";
+import Navbar from "@/app/components/Navbar";
+import Footer from "@/app/components/Footer";
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      {/*
-        <head /> will contain the components returned by the nearest parent
-        head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
-      */}
+    <html lang='en'>
       <head />
-      <body>{children}</body>
+      <body className='bg-gradient-to-b from-sky-900 to-sky-500 text-white min-h-screen'>
+        <Navbar />
+        <main className='flex max-w-[80%] min-h-[80vh] mx-auto justify-center'>
+          {children}
+        </main>
+        <Footer />
+      </body>
     </html>
-  )
+  );
 }
+
