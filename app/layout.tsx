@@ -1,6 +1,7 @@
 import "./globals.css";
 import Navbar from "@/app/components/Navbar";
 import Footer from "@/app/components/Footer";
+import { AnalyticsWrapper } from "./components/analytics";
 
 export default function RootLayout({
   children,
@@ -16,6 +17,7 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
+        <AnalyticsWrapper />
       </body>
     </html>
   );
