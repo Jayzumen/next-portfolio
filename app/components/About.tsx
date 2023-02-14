@@ -4,26 +4,30 @@ import { skills } from "../constans";
 
 export default function About() {
   return (
-    <div className='w-full flex xl:flex-row justify-around flex-col pt-12'>
-      <div className='mx-auto'>
+    <div
+      id="about"
+      className="flex min-h-[100vh] w-full flex-col justify-around pt-12 xl:flex-row"
+    >
+      <div className="mx-auto">
         <Image
-          className='rounded-full m-2 mx-auto'
+          priority
+          className="m-2 mx-auto rounded-full"
           width={400}
           height={400}
           src={Profile}
-          alt='My Profile Picture'
+          alt="My Profile Picture"
         />
-        <div className='text-center py-4'>
-          <p className='text-xl font-semibold underline pb-2'>Tech-Stack</p>
-          <div className='flex flex-wrap justify-center gap-8 max-w-[450px] mx-auto'>
+        <div className="py-4 text-center">
+          <p className="pb-2 text-xl font-semibold underline">Tech-Stack</p>
+          <div className="mx-auto flex max-w-[450px] flex-wrap justify-center gap-8 text-white">
             {skills.map((skill) => (
               <div
                 key={skill.name}
-                className='flex flex-col items-center bg-sky-900 p-2 rounded-lg min-w-[100px]'
+                className="flex min-w-[100px] flex-col items-center rounded-lg bg-zinc-700 p-2"
               >
                 <Image
                   title={skill.name}
-                  className='m-2'
+                  className="m-2"
                   width={50}
                   height={50}
                   src={skill.src}
@@ -35,9 +39,9 @@ export default function About() {
           </div>
         </div>
       </div>
-      <div className='mx-auto'>
-        <p className='text-4xl font-bold mb-4'>Hey, I'm Jan-Niklas. </p>
-        <p className='text-xl leading-9 max-w-[500px] mx-auto'>
+      <div className="mx-auto">
+        <p className="mb-4 text-4xl font-bold">Hey, I'm Jan-Niklas. </p>
+        <p className="mx-auto max-w-[500px] text-xl leading-9">
           I had the first contact with programming when I started to study "Data
           Science". This in turn wasn't much fun for me, but when I discovered
           frontend development, I was immediately hooked. Since then, I have
@@ -45,7 +49,7 @@ export default function About() {
           mostly work with React and JavaScript but am always open to learn more
           technologies.
         </p>
-        <p className='mt-4 text-xl leading-9 max-w-[500px] mx-auto'>
+        <p className="mx-auto mt-4 max-w-[500px] text-xl leading-9">
           I have a passion for football and gaming. When I'm not learning or
           working on my projects, I'm usually doing one of the two activities
           mentioned.

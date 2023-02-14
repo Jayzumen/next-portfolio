@@ -1,4 +1,4 @@
-import NextNetflixClone from "../assets/portfolio/netflixclone.jpg";
+import NetflixClone from "../assets/portfolio/netflixclone.jpg";
 import NoteTaker from "../assets/portfolio/notetaker.jpg";
 import Pokefans from "../assets/portfolio/pokefans.jpg";
 import JavaScript from "../assets/skills/javascript.png";
@@ -6,11 +6,13 @@ import TypeScript from "../assets/skills/typescript.png";
 import React from "../assets/skills/react.png";
 import NextJS from "../assets/skills/nextjs.svg";
 import TailwindCSS from "../assets/skills/tailwind.png";
+import Firebase from "../assets/skills/firebase.svg";
+import Git from "../assets/skills/git.svg";
 
 export const images = [
   {
-    name: "nextNetflixClone",
-    src: NextNetflixClone,
+    name: "NetflixClone",
+    src: NetflixClone,
   },
   {
     name: "noteTaker",
@@ -42,5 +44,13 @@ export const skills = [
   {
     name: "TailwindCSS",
     src: TailwindCSS,
+  },
+  {
+    name: "Firebase",
+    src: Firebase,
+  },
+  {
+    name: "Git",
+    src: Git,
   },
 ];

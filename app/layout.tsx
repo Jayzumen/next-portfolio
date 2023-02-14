@@ -9,11 +9,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang='en'>
+    <html lang="en">
       <head />
-      <body className='bg-gradient-to-b from-sky-900 to-sky-500 text-white min-h-screen'>
+      <body className="bg-zinc-900 text-white scrollbar-hide">
         <Navbar />
-        <main className='flex max-w-[80%] min-h-[80vh] mx-auto justify-center'>
+        <main className="mx-auto mt-4 w-full rounded-md bg-zinc-300 p-4 text-black shadow-md shadow-zinc-600 md:max-w-[80%]">
           {children}
         </main>
         <Footer />
@@ -22,4 +22,3 @@ export default function RootLayout({
     </html>
   );
 }
-
