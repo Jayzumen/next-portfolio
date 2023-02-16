@@ -38,6 +38,7 @@ function Contact() {
                 <p className="pt-8 uppercase">Connect With Me</p>
                 <div className="flex items-center justify-between py-4">
                   <Link
+                    aria-label="LinkedIn"
                     href="https://www.linkedin.com/in/jan-niklas-reinhardt/"
                     target="_blank"
                     rel="noreferrer"
@@ -47,6 +48,7 @@ function Contact() {
                     </div>
                   </Link>
                   <Link
+                    aria-label="github"
                     href="https://github.com/Jayzumen"
                     target="_blank"
                     rel="noreferrer"
@@ -56,6 +58,7 @@ function Contact() {
                     </div>
                   </Link>
                   <Link
+                    aria-label="visit my blog"
                     href="https://jns-blog.hashnode.dev/"
                     target="_blank"
                     rel="noreferrer"
@@ -79,48 +82,61 @@ function Contact() {
               >
                 <div className="grid w-full gap-4 py-2 md:grid-cols-2">
                   <div className="flex flex-col">
-                    <label className="py-2 text-sm uppercase">Name</label>
+                    <label htmlFor="name" className="py-2 text-sm uppercase">
+                      Name
+                    </label>
                     <input
                       className="flex rounded-lg border-2 border-gray-300 p-3"
                       type="text"
+                      id="name"
                       name="name"
                       required
                     />
                   </div>
                   <div className="flex flex-col">
-                    <label className="py-2 text-sm uppercase">
+                    <label htmlFor="phone" className="py-2 text-sm uppercase">
                       Phone Number
                     </label>
                     <input
                       className="flex rounded-lg border-2 border-gray-300 p-3"
                       type="text"
+                      id="phone"
                       name="phone"
                     />
                   </div>
                 </div>
                 <div className="flex flex-col py-2">
-                  <label className="py-2 text-sm uppercase">Email</label>
+                  <label htmlFor="email" className="py-2 text-sm uppercase">
+                    Email
+                  </label>
                   <input
                     className="flex rounded-lg border-2 border-gray-300 p-3"
                     type="email"
+                    id="email"
                     name="email"
                     required
                   />
                 </div>
                 <div className="flex flex-col py-2">
-                  <label className="py-2 text-sm uppercase">Subject</label>
+                  <label htmlFor="subject" className="py-2 text-sm uppercase">
+                    Subject
+                  </label>
                   <input
                     className="flex rounded-lg border-2 border-gray-300 p-3"
                     type="text"
+                    id="subject"
                     name="subject"
                     required
                   />
                 </div>
                 <div className="flex flex-col py-2">
-                  <label className="py-2 text-sm uppercase">Message</label>
+                  <label htmlFor="message" className="py-2 text-sm uppercase">
+                    Message
+                  </label>
                   <textarea
                     className="rounded-lg border-2 border-gray-300 p-3"
                     rows={10}
+                    id="message"
                     name="message"
                     required
                   />
@@ -134,7 +150,7 @@ function Contact() {
         </div>
         {/* back to top button */}
         <div className="flex justify-center py-8">
-          <a href="#home">
+          <a aria-label="back to top" href="#home">
             <div className="cursor-pointer rounded-full border border-zinc-500 p-4 shadow-lg shadow-gray-400 duration-300 ease-in hover:scale-110">
               <HiOutlineChevronDoubleUp className="text-sky-700" size={30} />
             </div>

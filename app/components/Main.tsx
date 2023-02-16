@@ -26,6 +26,7 @@ function Main() {
           </p>
           <div className="m-auto flex max-w-[330px] items-center justify-between py-4">
             <Link
+              aria-label="LinkedIn"
               href="https://www.linkedin.com/in/jan-niklas-reinhardt/"
               target="_blank"
               rel="noreferrer"
@@ -35,6 +36,7 @@ function Main() {
               </div>
             </Link>
             <Link
+              aria-label="GitHub"
               href="https://github.com/Jayzumen"
               target="_blank"
               rel="noreferrer"
@@ -43,12 +45,13 @@ function Main() {
                 <FaGithub />
               </div>
             </Link>
-            <a href="#contact">
+            <a aria-label="Contact me" href="#contact">
               <div className="cursor-pointer rounded-full p-6 shadow-lg shadow-gray-400 duration-300 ease-in hover:scale-110">
                 <AiOutlineMail />
               </div>
             </a>
             <Link
+              aria-label="Visit my Blog"
               href="https://jns-blog.hashnode.dev/"
               target="_blank"
               rel="noreferrer"
