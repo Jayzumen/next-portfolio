@@ -5,11 +5,11 @@ import { Project } from "../page";
 
 export default function Projects({ projects }: { projects: Project[] }) {
   return (
-    <div id="projects" className="flex min-h-[100vh] flex-col">
-      <h1 className="my-10 text-center text-4xl underline">
-        Some of my Projects
-      </h1>
-      <div className="flex flex-wrap gap-8">
+    <div id="projects" className="flex flex-col py-16">
+      <p className="my-10 text-center text-4xl uppercase text-sky-700 underline">
+        Projects
+      </p>
+      <div className="mx-auto flex max-w-[1200px] flex-wrap gap-8">
         {projects?.map((project) => (
           <div
             key={project.id}
@@ -28,7 +28,7 @@ export default function Projects({ projects }: { projects: Project[] }) {
               }
             })}
 
-            <div className="border-y-2 border-zinc-900 text-center">
+            <div className="border-b-2 border-zinc-900 text-center">
               <p className="my-3 mx-auto min-h-[60px] max-w-[350px] text-xl">
                 {project.description}
               </p>
@@ -39,7 +39,7 @@ export default function Projects({ projects }: { projects: Project[] }) {
                 href={project.homepage}
                 target="_blank"
                 rel="noreferrer"
-                className="m-5 cursor-pointer rounded-md bg-zinc-800 px-8 py-1 transition hover:underline"
+                className="m-5 cursor-pointer rounded-lg bg-gradient-to-r from-sky-500 to-sky-700  px-8 py-1 transition hover:underline"
               >
                 Website
               </Link>
@@ -48,7 +48,7 @@ export default function Projects({ projects }: { projects: Project[] }) {
                 href={project.html_url}
                 target="_blank"
                 rel="noreferrer"
-                className="m-5 cursor-pointer rounded-md bg-zinc-800 px-8 py-1 transition hover:underline"
+                className="m-5 cursor-pointer rounded-lg bg-gradient-to-r from-sky-500 to-sky-700  px-8 py-1 transition hover:underline"
               >
                 Github
               </Link>

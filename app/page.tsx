@@ -1,5 +1,6 @@
-import HeroSection from "@/app/components/HeroSection";
+import Main from "@/app/components/Main";
 import About from "./components/About";
+import Contact from "./components/Contact";
 import Projects from "./components/Projects";
 
 export interface Project {
@@ -30,9 +31,10 @@ export default async function Home() {
   const projects = await fetchProjects();
   return (
     <>
-      <HeroSection />
+      <Main />
       <About />
       <Projects projects={projects} />
+      <Contact />
     </>
   );
 }
