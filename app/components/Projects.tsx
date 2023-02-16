@@ -6,7 +6,7 @@ import { Project } from "../page";
 export default function Projects({ projects }: { projects: Project[] }) {
   return (
     <div id="projects" className="flex flex-col py-16">
-      <p className="my-10 text-center text-4xl uppercase text-sky-700 underline">
+      <p className="my-10 text-center text-4xl font-semibold uppercase tracking-widest text-sky-700 underline">
         Projects
       </p>
       <div className="mx-auto flex max-w-[1200px] flex-wrap gap-8">

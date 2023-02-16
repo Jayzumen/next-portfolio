@@ -5,7 +5,7 @@ import { skills } from "../constans";
 export default function About() {
   return (
     <div id="about" className="flex flex-col py-16">
-      <p className="text-center text-4xl font-semibold text-sky-700 underline">
+      <p className="text-center text-4xl font-semibold uppercase tracking-widest text-sky-700 underline">
         About me
       </p>
       <div className="flex w-full flex-col justify-around pt-12 xl:flex-row">
