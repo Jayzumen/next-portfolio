@@ -50,8 +50,8 @@ export default function About() {
             "Data Science". This in turn wasn't much fun for me, but when I
             discovered frontend development, I was immediately hooked. Since
             then, I have used every day to improve my skills as a web developer.
-            I currently mostly work with React and JavaScript but am always open
-            to learn more technologies.
+            I currently work with React, TypeScript and Next.js but am always
+            open to learn more technologies.
           </p>
           <p className="mx-auto mt-4 max-w-[500px] text-xl leading-9">
             I have a passion for football and gaming. When I'm not learning or

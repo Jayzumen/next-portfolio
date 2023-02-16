@@ -43,7 +43,7 @@ function Contact() {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <div className="cursor-pointer rounded-full p-6 shadow-lg shadow-gray-400 duration-300 ease-in hover:scale-110">
+                    <div className="cursor-pointer rounded-full border border-zinc-500 p-6 shadow-lg shadow-gray-400 duration-300 ease-in hover:scale-110">
                       <FaLinkedinIn />
                     </div>
                   </Link>
@@ -53,7 +53,7 @@ function Contact() {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <div className="cursor-pointer rounded-full p-6 shadow-lg shadow-gray-400 duration-300 ease-in hover:scale-110">
+                    <div className="cursor-pointer rounded-full border border-zinc-500 p-6 shadow-lg shadow-gray-400 duration-300 ease-in hover:scale-110">
                       <FaGithub />
                     </div>
                   </Link>
@@ -63,7 +63,7 @@ function Contact() {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <div className="cursor-pointer rounded-full p-6 shadow-lg shadow-gray-400 duration-300 ease-in hover:scale-110">
+                    <div className="cursor-pointer rounded-full border border-zinc-500 p-6 shadow-lg shadow-gray-400 duration-300 ease-in hover:scale-110">
                       <BsPenFill />
                     </div>
                   </Link>
