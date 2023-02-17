@@ -152,7 +152,10 @@ function Contact() {
         <div className="flex justify-center py-8">
           <a aria-label="back to top" href="#home">
             <div className="cursor-pointer rounded-full border border-zinc-500 p-4 shadow-lg shadow-gray-400 duration-300 ease-in hover:scale-110">
-              <HiOutlineChevronDoubleUp className="text-sky-700" size={30} />
+              <HiOutlineChevronDoubleUp
+                className="animate-bounce text-sky-700"
+                size={30}
+              />
             </div>
           </a>
         </div>

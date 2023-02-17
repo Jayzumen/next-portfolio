@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import { AiOutlineMail } from "react-icons/ai";
+import { AiOutlineMail, AiOutlineArrowDown } from "react-icons/ai";
 import { BsPenFill } from "react-icons/bs";
 
 function Main() {
@@ -60,6 +60,15 @@ function Main() {
                 <BsPenFill />
               </div>
             </Link>
+          </div>
+          {/* 
+            make a button, that scrolls down to the next section 
+          */}
+          <div className="flex items-center justify-center pt-36">
+            <div className="flex animate-bounce flex-col items-center justify-center text-center">
+              <p className="text-xl uppercase">Learn more</p>
+              <AiOutlineArrowDown size={30} />
+            </div>
           </div>
         </div>
       </div>
