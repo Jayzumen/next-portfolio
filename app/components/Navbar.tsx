@@ -14,11 +14,17 @@ export default function Navbar() {
     <nav className="sticky top-0 z-50 flex w-full flex-row justify-between gap-4 bg-zinc-800 px-12 py-4 text-center md:px-20">
       <a
         href="#home"
-        className="h-fit w-fit rounded-full text-3xl font-semibold shadow-sm shadow-white"
+        className="h-fit w-fit rounded-full text-3xl font-semibold shadow-sm shadow-white duration-300 ease-in hover:scale-110"
       >
-        <Image src="/favicon.ico" alt="my Icon" width={40} height={40} />
+        <Image
+          src="/j.png"
+          className="rounded-full"
+          alt="my Logo"
+          width={40}
+          height={40}
+        />
       </a>
-      <ul className="hidden justify-center gap-4 text-2xl md:flex">
+      <ul className="hidden items-center justify-center gap-4 text-2xl md:flex">
         {Links.map((link) => (
           <li key={link.name} className="transition hover:underline">
             <a aria-label={`Link to ${link.name}`} href={link.href}>

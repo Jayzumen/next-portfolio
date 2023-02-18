@@ -2,13 +2,12 @@ export default function Head() {
   return (
     <>
       <title>J-N Reinhardt</title>
-      <meta content='width=device-width, initial-scale=1' name='viewport' />
+      <meta content="width=device-width, initial-scale=1" name="viewport" />
       <meta
-        name='description'
-        content='Portolio page of Jan-Niklas Reinhardt'
+        name="description"
+        content="Portolio page of Jan-Niklas Reinhardt"
       />
-      <link rel='icon' href='/favicon.ico' />
+      <link rel="icon" href="/j.png" />
     </>
   );
 }
-
