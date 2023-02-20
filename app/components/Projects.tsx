@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { images } from "../constans";
+import { images } from "../constants";
 import { Project } from "../page";
 
 export default function Projects({ projects }: { projects: Project[] }) {

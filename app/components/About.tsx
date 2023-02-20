@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Profile from "../../assets/profile.jpg";
-import { skills } from "../constans";
+import { skills } from "../constants";
 
 export default function About() {
   return (

@@ -1,6 +1,7 @@
 import NetflixClone from "../assets/portfolio/netflixclone.jpg";
 import NoteTaker from "../assets/portfolio/notetaker.jpg";
 import Pokefans from "../assets/portfolio/pokefans.jpg";
+import CineScope from "../assets/portfolio/cinescope.jpg";
 import JavaScript from "../assets/skills/javascript.png";
 import TypeScript from "../assets/skills/typescript.png";
 import React from "../assets/skills/react.png";
@@ -21,6 +22,10 @@ export const images = [
   {
     name: "pokefans",
     src: Pokefans,
+  },
+  {
+    name: "cinescope",
+    src: CineScope,
   },
 ];
 
