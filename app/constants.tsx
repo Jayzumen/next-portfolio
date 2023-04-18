@@ -1,5 +1,5 @@
 import NetflixClone from "../assets/portfolio/netflixclone.jpg";
-import NoteTaker from "../assets/portfolio/notetaker.jpg";
+import Foodel from "../assets/portfolio/foodel.jpg";
 import Pokefans from "../assets/portfolio/pokefans.jpg";
 import CineScope from "../assets/portfolio/cinescope.jpg";
 import JavaScript from "../assets/skills/javascript.png";
@@ -16,8 +16,8 @@ export const images = [
     src: NetflixClone,
   },
   {
-    name: "noteTaker",
-    src: NoteTaker,
+    name: "foodel",
+    src: Foodel,
   },
   {
     name: "pokefans",
