@@ -61,9 +61,6 @@ function Main() {
               </div>
             </Link>
           </div>
-          {/* 
-            make a button, that scrolls down to the next section 
-          */}
           <div className="flex items-center justify-center pt-36">
             <div className="flex animate-bounce flex-col items-center justify-center text-center">
               <p className="text-xl uppercase">Learn more</p>

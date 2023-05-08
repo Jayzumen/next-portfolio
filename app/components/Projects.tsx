@@ -1,4 +1,3 @@
-"use client";
 import Image from "next/image";
 import Link from "next/link";
 import { images } from "../constants";
@@ -30,7 +29,7 @@ export default function Projects({ projects }: { projects: Project[] }) {
             })}
 
             <div className="border-b-2 border-zinc-900 text-center">
-              <p className="my-3 mx-auto min-h-[60px] max-w-[350px] text-xl">
+              <p className="mx-auto my-3 min-h-[60px] max-w-[350px] text-xl">
                 {project.description}
               </p>
             </div>
