@@ -2,13 +2,16 @@ import NetflixClone from "../assets/portfolio/netflixclone.jpg";
 import Foodel from "../assets/portfolio/foodel.jpg";
 import Pokefans from "../assets/portfolio/pokefans.jpg";
 import CineScope from "../assets/portfolio/cinescope.jpg";
-import JavaScript from "../assets/skills/javascript.png";
-import TypeScript from "../assets/skills/typescript.png";
-import React from "../assets/skills/react.png";
-import NextJS from "../assets/skills/nextjs.svg";
-import TailwindCSS from "../assets/skills/tailwind.png";
-import Firebase from "../assets/skills/firebase.svg";
-import Git from "../assets/skills/git.svg";
+import { BsGit } from "react-icons/bs";
+import {
+  SiMysql,
+  SiTailwindcss,
+  SiJavascript,
+  SiTypescript,
+  SiReact,
+  SiNextdotjs,
+  SiPostgresql,
+} from "react-icons/si";
 
 export const images = [
   {
@@ -31,31 +34,35 @@ export const images = [
 
 export const skills = [
   {
-    name: "JavaScript",
-    src: JavaScript,
+    name: "TypeScript",
+    icon: <SiTypescript size={50} className="text-sky-500" />,
   },
   {
-    name: "TypeScript",
-    src: TypeScript,
+    name: "JavaScript",
+    icon: <SiJavascript size={50} className="text-yellow-500" />,
   },
   {
     name: "React",
-    src: React,
+    icon: <SiReact size={50} className="text-sky-500" />,
   },
   {
     name: "Next.js",
-    src: NextJS,
+    icon: <SiNextdotjs size={50} className="text-black" />,
   },
   {
-    name: "TailwindCSS",
-    src: TailwindCSS,
+    name: "Tailwind",
+    icon: <SiTailwindcss size={50} className="text-cyan-500" />,
   },
   {
-    name: "Firebase",
-    src: Firebase,
+    name: "MySQL",
+    icon: <SiMysql size={50} className="text-sky-500" />,
+  },
+  {
+    name: "PostgreSQL",
+    icon: <SiPostgresql size={50} className="text-sky-400" />,
   },
   {
     name: "Git",
-    src: Git,
+    icon: <BsGit size={50} className="text-orange-600" />,
   },
 ];

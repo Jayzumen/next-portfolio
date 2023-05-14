@@ -18,7 +18,7 @@ export default function About() {
             src={Profile}
             alt="My Profile Picture"
           />
-          <div className="py-4 text-center">
+          <div className="mb-8 py-4 text-center">
             <p className="pb-2 text-xl font-semibold underline">Tech-Stack</p>
             <div className="mx-auto flex max-w-[450px] flex-wrap justify-center gap-8 text-white">
               {skills.map((skill) => (
@@ -26,15 +26,7 @@ export default function About() {
                   key={skill.name}
                   className="flex min-w-[100px] flex-col items-center rounded-lg bg-zinc-700 p-2"
                 >
-                  <Image
-                    priority
-                    title={skill.name}
-                    className="m-2"
-                    width={50}
-                    height={50}
-                    src={skill.src}
-                    alt={skill.name}
-                  />
+                  {skill.icon}
                   <p>{skill.name}</p>
                 </div>
               ))}
