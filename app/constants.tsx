@@ -1,6 +1,6 @@
 import NetflixClone from "../assets/portfolio/netflixclone.jpg";
 import Foodel from "../assets/portfolio/foodel.jpg";
-import Pokefans from "../assets/portfolio/pokefans.jpg";
+import CarRental from "../assets/portfolio/carrental.jpg";
 import CineScope from "../assets/portfolio/cinescope.jpg";
 import { BsGit } from "react-icons/bs";
 import {
@@ -23,8 +23,8 @@ export const images = [
     src: Foodel,
   },
   {
-    name: "pokefans",
-    src: Pokefans,
+    name: "carrental",
+    src: CarRental,
   },
   {
     name: "cinescope",
