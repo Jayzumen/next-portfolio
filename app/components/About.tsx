@@ -1,5 +1,3 @@
-import Image from "next/image";
-import Profile from "../../assets/profile.jpg";
 import { skills } from "../constants";
 
 export default function About() {
@@ -10,14 +8,6 @@ export default function About() {
       </p>
       <div className="flex w-full flex-col justify-around pt-12 xl:flex-row">
         <div className="mx-auto">
-          <Image
-            priority
-            className="m-2 mx-auto rounded-full"
-            width={400}
-            height={400}
-            src={Profile}
-            alt="My Profile Picture"
-          />
           <div className="mb-8 py-4 text-center">
             <p className="pb-2 text-xl font-semibold underline">Tech-Stack</p>
             <div className="mx-auto flex max-w-[450px] flex-wrap justify-center gap-8 text-white">
